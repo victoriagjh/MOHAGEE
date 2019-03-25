@@ -6,7 +6,8 @@ First, data is collected based on Gangnam Station.
 
 ## Detail of feature
 ### Basic login & subscription features
-main screen
+
+### main screen
 Implemented the screen of Instagram. Because of the performance of a server, the quality of images is poor.
 It shows the data at the top of the cafe and restaurant at random in the order of the highest rating of the data that the server has. We will provide the name, address, star and photos of each place.
 
