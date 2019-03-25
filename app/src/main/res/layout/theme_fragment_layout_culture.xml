@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/culture_theme"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* 소분류 (택 1)"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/little_type_text_culture"/>
+
+    <Button
+        android:layout_below="@+id/little_type_text_culture"
+        android:layout_marginLeft="20dp"
+        android:textColor="@drawable/text_selector"
+        android:layout_marginTop="20dp"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:id="@+id/movie_button"
+        android:background="@drawable/button_round"
+        android:text="#영화"
+        />
+    <Button
+        android:layout_marginTop="20dp"
+        android:textColor="@drawable/text_selector"
+        android:layout_below="@+id/little_type_text_culture"
+
+        android:id="@+id/theater_button"
+        android:layout_toRightOf="@+id/movie_button"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_round"
+        android:text="#연극"
+        />
+    <Button
+        android:layout_marginTop="20dp"
+        android:textColor="@drawable/text_selector"
+        android:layout_below="@+id/little_type_text_culture"
+
+        android:id="@+id/Exhibition_button"
+        android:layout_toRightOf="@+id/theater_button"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_round"
+        android:text="#전시회"
+        />
+
+</RelativeLayout>
