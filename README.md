@@ -1,7 +1,7 @@
 # MOHAGEE
 Khuveloper
 Application
-The Mohagee application is a customized scheduling application that recommends the right place to the user based on his / her desired schedule, theme (time, place, location, and sub-category * sub category). It is the goal of the application to ensure that users do not worry much about future schedules.
+The Mohagee application is a customized scheduling application that recommends the right place to the user based on his / her desired schedule, theme (time, place, location, sub category). It is the goal of the application to ensure that users do not worry much about future schedules.
 First, data is collected based on Gangnam Station.
 
 ## Detail of feature
