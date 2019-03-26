@@ -22,4 +22,18 @@ The custom path is the ability to selectively create a route to the desired loca
 If you see the place detail screen, there is a heart button, and when you press that button, the place is added to the custom list.
 Select the desired places and press the Create Path button to apply the location and route to the map as you would search for the recommended route.
 
+### Data collection
+The most important thing in Mohagee is data. There are memory and time limitations in collecting data from all over the country. So we collected most of the places in Gangnam area(in several categories).
+First of all, we collected detailed data on the gangnam area, including basic information such as restaurants, places of entertainment, names of cultural elements, address, and classification, theme, atmosphere, purpose of search, and preference for each age group. We collected data using Naver Data Lab, Naver Place, Instagram, and Facebook.
+Open source used: Selenium, Jsoup
+
+
+### Theme extraction _ Machine learning
+Take reviews from each location for each place and extract the Topic for reviews via LDA. At this time, we put the word 'konlpy' into the LDA using a stemming library to prevent the search for 'suffix'.
+Afterwards, Word2Vec is used to vectorize the words, and then calculates the distance to the theme word that development team wants. After that, I checked what the most appropriate theme was, and stored it in the DB to provide a place for the theme that the user entered.
+Used library: gensim model, konlpy library
+
+### Server
+We chose a three-tier model that puts the application server between the client and the database rather than the two-tiered model where the client directly accesses the database. With the application server, the client accesses the application server, making it easy to search and receive the necessary information easily. It also reduces the burden on the client because it first processes the data on the server. SpringBoot was used as a development tool, and RestfulAPI was used to facilitate development convenience by allowing JSON as well as object communication between client and application server.
+
 You can see the demo video on [Youtube](https://youtu.be/WwgLIeJR2jw).
